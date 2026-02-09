@@ -1,7 +1,7 @@
 import { test, expect } from '@playwright/test';
 
 test('deve permitir login com credenciais válidas', async ({ page }) => {
-  await page.goto('/login');
+  await page.goto('/');
   await page.getByRole('link', { name: ' Login' }).click();
   await page.locator('#user').click();
   await page.locator('#user').fill('teste@teste.com');
